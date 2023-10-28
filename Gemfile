@@ -91,7 +91,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'brakeman'
   gem 'capybara', '~> 2.13'
-  gem 'minitest-rails'
+  gem 'minitest-rails', '>= 7.1.0'
   gem 'minitest-reporters'
   gem 'pry'
   gem 'pry-rails'
