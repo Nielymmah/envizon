@@ -76,7 +76,7 @@ gem 'rubyzip', '>= 1.0.0' # will load new rubyzip version
 gem 'zip-zip' # will load compatibility for old rubyzip API.
 
 # export report
-gem 'sablon' # docx tamplate
+gem 'sablon' , '>= 0.4.0' # docx tamplate
 gem 'axlsx' # xlsx export
 
 # admin db
