@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4'
+gem 'rails', '~> 7.0.8', '>= 7.0.8.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.5.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -35,19 +35,19 @@ gem 'ipaddress', git: 'https://github.com/ipaddress-gem/ipaddress.git'
 gem 'psych', '~> 4.0', '>= 4.0.1'
 
 # Login
-gem 'devise'
+gem 'devise', '>= 4.8.1'
 
 # Form
-gem 'simple_form'
+gem 'simple_form', '>= 5.2.0'
 
 # fix multipart upload not rendering js
 gem 'remotipart'
 
 # Frontend
 # gem 'devise-bootstrap-views'
-gem 'font_awesome5_rails'
+gem 'font_awesome5_rails', '>= 1.5.0'
 gem 'jquery-datatables-rails'
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 7.0.0'
 gem 'toastr_rails'
 
 # bootstrap
@@ -62,7 +62,7 @@ gem 'mini_magick'
 gem 'selenium-webdriver'
 
 # jobs
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.2.2'
 
 # gems needed for sidekiq, not bundled in Ruby 2.7 anymore
 gem 'e2mmap'
@@ -76,12 +76,12 @@ gem 'rubyzip', '>= 1.0.0' # will load new rubyzip version
 gem 'zip-zip' # will load compatibility for old rubyzip API.
 
 # export report
-gem 'sablon' # docx tamplate
-gem 'axlsx' # xlsx export
+gem 'sablon' , '>= 0.4.0' # docx tamplate
+gem 'axlsx' , '>= 2.0.0' # xlsx export
 
 # admin db
-gem 'trestle'
-gem 'trestle-auth'
+gem 'trestle', '>= 0.9.6'
+gem 'trestle-auth', '>= 0.4.4'
 gem 'trestle-search'
 
 group :development, :test do
@@ -90,8 +90,8 @@ group :development, :test do
   gem 'irb'
   # Adds support for Capybara system testing and selenium driver
   gem 'brakeman'
-  gem 'capybara', '~> 2.13'
-  gem 'minitest-rails'
+  gem 'capybara', '~> 3.0', '>= 3.0.0'
+  gem 'minitest-rails', '>= 7.0.0'
   gem 'minitest-reporters'
   gem 'pry'
   gem 'pry-rails'
@@ -107,10 +107,10 @@ group :development do
   # documentation
   gem 'jeweler'
   gem 'redcarpet'
-  gem 'yard', '>= 0.9.12'
+  gem 'yard', '>= 0.9.35'
   gem 'yard-restful', git: 'https://github.com/evs-ch/yard-restful.git'
 
-  gem 'web-console'
+  gem 'web-console', '>= 4.0.0'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   # gem 'web-console'
   gem 'listen', '>= 3.0.5', '< 3.2'
